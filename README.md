@@ -16,30 +16,39 @@ This application provides a graphical interface for controlling a fluid control 
 
 
 The P&ID of Maelstrom looks below
-![alt text](https://github.com/armanislam-07p/Maelstorm_PID/P&ID.png "Maelstrom's P&ID")
+![P&ID](P&ID.png)
+
+Program Running with the P&ID
+![Program](Example_Image.png)
 
 ## System Requirements
 
-- Python 3.x
+- Python 3.14.0
 - PyQt5
-- LabJack T7 device and LJM library
+- LabJack T7 device and LJM library [Download Link](https://support.labjack.com/docs/ljm-software-installer-windows) 
 - Additional Python libraries: csv, threading, queue, datetime
 
 ## Installation
 
-1. Ensure you have Python 3.x installed
+1. Ensure you have Python 3.14.0 or greater installed
 2. Clone or download this repository to your local machine
-3. Install required packages by navigating to the Torch_Hot_Fire directory and running:
+3. Install required packages by navigating to the Maelstrom_PID directory and running:
 
    ```
-   pip install -r requirements.txt
+   pip install --user -r requirements.txt
    ```
 
    This will install the necessary dependencies including PyQt5 and LabJack-LJM
 
+   If there is an issue with dependencies use the following commands below: 
+      pip install pyqtgraph
+      pip install labjack-ljm
+      pip install PyQt5-tools
+      pip install PyQt5
+
 ## Running the Application
 
-The application is started by running the main.py file from within the Torch_Hot_Fire directory:
+The application is started by running the main.py file from within the Maelstrom_PID directory:
 
 ```
 python main.py
@@ -122,9 +131,8 @@ Log files are CSV format with the following columns:
 Close the Main Panel to close the entire program. This will perform a proper shutdown of all components.
 
 ## Known Issues
-
-## Directory Structure
-
+    - Some of the Pressure readings are misaligned but this will be fixed in the next update since it's just fixing the numbers
+    
 ## Permissions and Hardware Access
 
 This application requires appropriate permissions to access the LabJack hardware. Ensure the user running the application has the required system permissions.
