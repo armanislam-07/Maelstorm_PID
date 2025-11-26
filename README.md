@@ -116,8 +116,6 @@ MainPanel.py is where most objects are initialized and the main script operates.
 - The **Emergency Shutdown** button will reset all valves to their default state and stop any active sequence
 - Use this instead of the sequencer's stop button due to known issues
 
-## File Formats
-
 ### Data Log Files
 
 Log files are CSV format with the following columns:
@@ -126,13 +124,9 @@ Log files are CSV format with the following columns:
 - Pressure readings for each transducer
 - State of each valve (True/False)
 
-## Closing the Application
-
-Close the Main Panel to close the entire program. This will perform a proper shutdown of all components.
-
 ## Known Issues
     - Some of the Pressure readings are misaligned but this will be fixed in the next update since it's just fixing the numbers
-    
+
 ## Permissions and Hardware Access
 
 This application requires appropriate permissions to access the LabJack hardware. Ensure the user running the application has the required system permissions.
