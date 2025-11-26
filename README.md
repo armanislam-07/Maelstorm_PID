@@ -1,6 +1,8 @@
-# Biggie-K P&ID Control System
+# Maelstrom P&ID Control System
 
 A PyQt5-based application for controlling and monitoring a fluid system with LabJack interface for valve control, pressure readings, data logging, and automated sequencing.
+
+The project Maelstrom is a 500-lbf kerosene-LOX heatsink engine designed as a testbed for PURPL to experiment with various experimental rocket propulsion technologies. One of these technologies is a coaxial swirl injector—an injector type that utilizes concentric passages and tangential inlets to spin fuel and oxidizer into hollow conical sprays, promoting fine atomization and rapid mixing for efficient combustion. Maelstrom is equipped with a 6-element fuel-centered bi-swirl coaxial injector 3D printed by Protolabs out of 17-4 stainless steel
 
 ## Overview
 
@@ -11,6 +13,10 @@ This application provides a graphical interface for controlling a fluid control 
 - Data logging with adjustable sampling rates
 - Automated sequencing capability for valve operations
 - Emergency shutdown functionality
+
+
+The P&ID of Maelstrom looks below
+![alt text](https://github.com/armanislam-07p/Maelstorm_PID/P&ID.png "Maelstrom's P&ID")
 
 ## System Requirements
 
